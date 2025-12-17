@@ -12,10 +12,20 @@ export default function App() {
         setCurrentPage('exhibition');
       }
     };
+    
+    const handleLogoClick = () => {
+      setCurrentPage('home');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
       <div onClick={(e) => {
         const target = e.target as HTMLElement;
+        // Check if clicked on logo or its child
+        if (target.closest('[data-logo="true"]')) {
+          handleLogoClick();
+          return;
+        }
         const text = target.textContent?.trim();
         if (text) handleNavigation(text);
       }}>
@@ -31,10 +41,20 @@ export default function App() {
         setCurrentPage('home');
       }
     };
+    
+    const handleLogoClick = () => {
+      setCurrentPage('home');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
       <div onClick={(e) => {
         const target = e.target as HTMLElement;
+        // Check if clicked on logo or its child
+        if (target.closest('[data-logo="true"]')) {
+          handleLogoClick();
+          return;
+        }
         const text = target.textContent?.trim();
         if (text) handleNavigation(text);
       }}>

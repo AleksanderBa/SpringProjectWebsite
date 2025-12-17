@@ -15,10 +15,18 @@ function Navigation() {
 }
 
 function Hero() {
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  
   return (
     <section className="relative w-full h-[200px] mb-8">
       {/* Logo */}
-      <div className="absolute left-[50px] top-[45px] w-[280px] h-[70px]">
+      <div 
+        data-logo="true"
+        className="absolute left-[50px] top-[45px] w-[280px] h-[70px] cursor-pointer hover:opacity-80 transition-opacity z-10"
+        onClick={handleLogoClick}
+      >
         <img alt="Naturhistorisk Museum Logo" className="w-full h-full object-cover" src={imgNaturhistoriskMuseumLogo} />
       </div>
       
