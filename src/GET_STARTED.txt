@@ -1,0 +1,181 @@
+================================================================================
+  NATURAL HISTORY MUSEUM AARHUS - WEBSITE PROJECT
+  Get Started with Visual Studio Code
+================================================================================
+
+Hello! This project contains a complete website for the Natural History Museum
+Aarhus (Naturhistorisk Museum). Follow these simple steps to get it running.
+
+================================================================================
+  STEP 1: OPEN IN VISUAL STUDIO CODE
+================================================================================
+
+1. Open Visual Studio Code
+2. Click: File > Open Folder
+3. Select this project folder
+4. Click "Select Folder"
+
+================================================================================
+  STEP 2: INSTALL DEPENDENCIES
+================================================================================
+
+1. Open Terminal in VS Code:
+   - Menu: Terminal > New Terminal
+   - Or press: Ctrl + ` (backtick key)
+
+2. Type this command and press Enter:
+   
+   npm install
+
+3. Wait for installation to complete (may take 2-5 minutes)
+
+================================================================================
+  STEP 3: SET UP IMAGE FOLDERS
+================================================================================
+
+1. In VS Code, right-click in the file explorer (left sidebar)
+2. Click "New Folder"
+3. Name it: public
+4. Right-click the "public" folder
+5. Click "New Folder"
+6. Name it: assets
+
+Your folder structure should now look like:
+public/
+  └── assets/
+
+7. Place your .png image files in the "public/assets/" folder
+
+================================================================================
+  STEP 4: START THE WEBSITE
+================================================================================
+
+In the terminal, type:
+
+   npm run dev
+
+You should see:
+  ➜  Local:   http://localhost:5173/
+
+Hold Ctrl (or Cmd on Mac) and click the link to open in browser!
+
+================================================================================
+  WHAT YOU'LL SEE
+================================================================================
+
+✓ Home Page
+  - Museum logo and navigation
+  - Hero carousel with "Future Human" exhibition
+  - Exhibition details
+  - Ticket pricing information
+  - Contact information and opening hours
+  - Social media links
+
+✓ Exhibition Page
+  - Click "Exhibitions" in navigation to see it
+  - "Endangered Predators of Denmark" exhibition details
+
+================================================================================
+  IMPORTANT FILES TO KNOW
+================================================================================
+
+📄 App.tsx
+   Main application file - handles navigation between pages
+
+📁 imports/
+   ├── Home.tsx                    (Home page)
+   └── NewInTheGlobalBackyard.tsx  (Exhibition page)
+
+📁 styles/
+   └── globals.css                 (Colors and styling)
+
+📁 public/assets/
+   └── [Your images go here]
+
+================================================================================
+  HELPFUL DOCUMENTS
+================================================================================
+
+Quick Start:
+  → Open: QUICK_START.md (3-step setup)
+
+Detailed Guide:
+  → Open: SETUP_GUIDE.md (Complete instructions with troubleshooting)
+
+Project Overview:
+  → Open: README.md (Features and information)
+
+File Structure:
+  → Open: PROJECT_STRUCTURE.md (Complete file listing)
+
+================================================================================
+  COMMON COMMANDS
+================================================================================
+
+Start development:     npm run dev
+Stop server:           Press Ctrl + C in terminal
+Build for production:  npm run build
+Preview build:         npm run preview
+
+================================================================================
+  QUICK TIPS
+================================================================================
+
+✓ Files auto-save in VS Code (check bottom left corner)
+✓ Browser auto-refreshes when you save changes
+✓ Edit .tsx files to change content
+✓ Edit globals.css to change colors
+✓ All your images go in public/assets/
+
+================================================================================
+  TROUBLESHOOTING
+================================================================================
+
+Problem: "Command not found: npm"
+Solution: Install Node.js from https://nodejs.org/
+
+Problem: "Port already in use"
+Solution: Press Ctrl + C to stop server, then run "npm run dev" again
+
+Problem: Images not showing
+Solution: Make sure images are in public/assets/ folder
+
+Problem: Changes not appearing
+Solution: Save the file (Ctrl + S) and hard refresh browser (Ctrl + Shift + R)
+
+================================================================================
+  GETTING HELP
+================================================================================
+
+1. Check the error message in the terminal
+2. Press F12 in browser to see console errors
+3. Read the detailed guides (SETUP_GUIDE.md)
+4. Make sure all files are saved
+
+================================================================================
+  READY TO START?
+================================================================================
+
+Run this in the terminal:
+
+   npm install
+   npm run dev
+
+Then open: http://localhost:5173
+
+Happy coding! 🎉
+
+================================================================================
+  Website Features
+================================================================================
+
+✓ Responsive design with Tailwind CSS
+✓ TypeScript for type safety
+✓ React for component architecture
+✓ Vite for fast development
+✓ Multiple pages with navigation
+✓ Social media integration
+✓ Museum information and opening hours
+✓ Exhibition details and ticket pricing
+
+================================================================================

@@ -1,0 +1,174 @@
+================================================================================
+  COMPLETE FILE TREE - Natural History Museum Website
+================================================================================
+
+naturhistorisk-museum-website/
+│
+├── 📄 index.html                      Entry HTML file
+├── 📄 main.tsx                       React entry point
+├── 📄 App.tsx                        Main app with navigation
+│
+├── 📁 imports/                        Figma pages
+│   ├── 📄 Home.tsx                   Home page component
+│   ├── 📄 NewInTheGlobalBackyard.tsx Exhibition page
+│   ├── 📄 svg-rdau46vjow.ts         SVG paths (Home)
+│   └── 📄 svg-gshr5vnkae.ts         SVG paths (Exhibition)
+│
+├── 📁 components/                     React components
+│   ├── 📁 figma/
+│   │   └── 📄 ImageWithFallback.tsx  Protected image component
+│   │
+│   └── 📁 ui/                        UI component library
+│       ├── 📄 accordion.tsx
+│       ├── 📄 alert-dialog.tsx
+│       ├── 📄 alert.tsx
+│       ├── 📄 aspect-ratio.tsx
+│       ├── 📄 avatar.tsx
+│       ├── 📄 badge.tsx
+│       ├── 📄 breadcrumb.tsx
+│       ├── 📄 button.tsx
+│       ├── 📄 calendar.tsx
+│       ├── 📄 card.tsx
+│       ├── 📄 carousel.tsx
+│       ├── 📄 chart.tsx
+│       ├── 📄 checkbox.tsx
+│       ├── 📄 collapsible.tsx
+│       ├── 📄 command.tsx
+│       ├── 📄 context-menu.tsx
+│       ├── 📄 dialog.tsx
+│       ├── 📄 drawer.tsx
+│       ├── 📄 dropdown-menu.tsx
+│       ├── 📄 form.tsx
+│       ├── 📄 hover-card.tsx
+│       ├── 📄 input-otp.tsx
+│       ├── 📄 input.tsx
+│       ├── 📄 label.tsx
+│       ├── 📄 menubar.tsx
+│       ├── 📄 navigation-menu.tsx
+│       ├── 📄 pagination.tsx
+│       ├── 📄 popover.tsx
+│       ├── 📄 progress.tsx
+│       ├── 📄 radio-group.tsx
+│       ├── 📄 resizable.tsx
+│       ├── 📄 scroll-area.tsx
+│       ├── 📄 select.tsx
+│       ├── 📄 separator.tsx
+│       ├── 📄 sheet.tsx
+│       ├── 📄 sidebar.tsx
+│       ├── 📄 skeleton.tsx
+│       ├── 📄 slider.tsx
+│       ├── 📄 sonner.tsx
+│       ├── 📄 switch.tsx
+│       ├── 📄 table.tsx
+│       ├── 📄 tabs.tsx
+│       ├── 📄 textarea.tsx
+│       ├── 📄 toggle-group.tsx
+│       ├── 📄 toggle.tsx
+│       ├── 📄 tooltip.tsx
+│       ├── 📄 use-mobile.ts
+│       └── 📄 utils.ts
+│
+├── 📁 styles/                         Stylesheets
+│   └── 📄 globals.css                Global CSS & Tailwind
+│
+├── 📁 public/                         ⚠️ CREATE THIS FOLDER
+│   └── 📁 assets/                    ⚠️ CREATE THIS FOLDER
+│       ├── 🖼️ a239b2037acbc9301b2fd951317d6271cff22ebc.png
+│       ├── 🖼️ 8aa0d717f8eefaf52caca3406bd13c7aeeee3466.png
+│       ├── 🖼️ e5a22f390b749fc63aae121ca333521ded027cf7.png
+│       ├── 🖼️ f03c10e472007a36948fdf507f0c39637697c8b7.png
+│       └── 🖼️ 85a93dff094cd92eb9de11fb58d10e7863aa8116.png
+│
+├── 📁 .vscode/                        VS Code settings
+│   ├── 📄 settings.json              Editor settings
+│   └── 📄 extensions.json            Recommended extensions
+│
+├── 📁 guidelines/                     
+│   └── 📄 Guidelines.md              Project guidelines
+│
+├── 📄 package.json                    Dependencies & scripts
+├── 📄 tsconfig.json                   TypeScript config
+├── 📄 tsconfig.node.json              TypeScript Node config
+├── 📄 vite.config.ts                  Vite bundler config
+├── 📄 postcss.config.js               PostCSS config
+├── 📄 .eslintrc.cjs                   ESLint config
+├── 📄 .gitignore                      Git ignore rules
+│
+├── 📄 README.md                       Project overview
+├── 📄 SETUP_GUIDE.md                  Detailed setup guide
+├── 📄 QUICK_START.md                  Quick start (3 steps)
+├── 📄 GET_STARTED.txt                 Plain text guide
+├── 📄 PROJECT_STRUCTURE.md            File structure details
+├── 📄 FILES_CHECKLIST.md              Setup checklist
+└── 📄 FILE_TREE.txt                   This file
+
+================================================================================
+
+AUTO-GENERATED FOLDERS (Created by npm, don't create manually):
+│
+├── 📁 node_modules/                   🤖 Created by: npm install
+│   └── [Thousands of dependency files]
+│
+└── 📁 dist/                           🤖 Created by: npm run build
+    └── [Production build files]
+
+================================================================================
+
+LEGEND:
+  📄 = File (already created)
+  📁 = Folder (already exists)
+  🖼️ = Image file (you need to add)
+  ⚠️ = Action required (create this)
+  🤖 = Auto-generated (don't create manually)
+
+================================================================================
+
+TOTAL COUNT:
+  ✅ Configuration files:    10
+  ✅ React components:        3 pages + 40+ UI components
+  ✅ Style files:            1
+  ✅ Documentation:          7
+  ⚠️ Folders to create:      2 (public/ and public/assets/)
+  ⚠️ Images to add:          5 (optional)
+
+================================================================================
+
+WHAT TO DO NEXT:
+
+1. Open this folder in Visual Studio Code
+   File > Open Folder > Select this folder
+
+2. Open Terminal in VS Code
+   Terminal > New Terminal (or Ctrl + `)
+
+3. Install dependencies
+   npm install
+
+4. Create public/assets/ folder structure
+   Right-click > New Folder > "public"
+   Right-click public > New Folder > "assets"
+
+5. Add image files to public/assets/
+   (Optional but recommended for full experience)
+
+6. Start the development server
+   npm run dev
+
+7. Open in browser
+   http://localhost:5173
+
+================================================================================
+
+QUICK REFERENCE:
+
+Start server:        npm run dev
+Stop server:         Ctrl + C
+Build production:    npm run build
+Preview build:       npm run preview
+
+Edit home page:      imports/Home.tsx
+Edit exhibition:     imports/NewInTheGlobalBackyard.tsx
+Change colors:       styles/globals.css
+Add navigation:      App.tsx
+
+================================================================================
