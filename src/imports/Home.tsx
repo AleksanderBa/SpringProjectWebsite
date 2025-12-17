@@ -1,8 +1,13 @@
 import svgPaths from "./svg-viq9zh93we";
-import imgRectangle1 from "figma:asset/a239b2037acbc9301b2fd951317d6271cff22ebc.png";
+// Banner carousel images
+import banner1 from "figma:asset/a239b2037acbc9301b2fd951317d6271cff22ebc.png";
+import banner2 from "figma:asset/e5a22f390b749fc63aae121ca333521ded027cf7.png";
+import banner3 from "figma:asset/f03c10e472007a36948fdf507f0c39637697c8b7.png";
+// Museum logo
 import imgNaturhistoriskMuseumLogo from "figma:asset/8aa0d717f8eefaf52caca3406bd13c7aeeee3466.png";
-import imgRectangle2 from "figma:asset/e5a22f390b749fc63aae121ca333521ded027cf7.png";
-import imgRectangle3 from "figma:asset/f03c10e472007a36948fdf507f0c39637697c8b7.png";
+// Section images
+import futureHuman from "figma:asset/e5a22f390b749fc63aae121ca333521ded027cf7.png";
+import ticketPrices from "figma:asset/f03c10e472007a36948fdf507f0c39637697c8b7.png";
 import { useState } from 'react';
 
 function Navigation() {
@@ -18,7 +23,7 @@ function Navigation() {
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [imgRectangle1, imgRectangle2, imgRectangle3];
+  const slides = [banner1, banner2, banner3];
   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -97,7 +102,7 @@ function FutureHumanSection() {
         <div className="grid grid-cols-2 gap-12 items-start">
           {/* Left side - Image */}
           <div className="w-full h-[400px]">
-            <img alt="Future Human Exhibition" className="w-full h-full object-cover" src={imgRectangle2} />
+            <img alt="Future Human Exhibition" className="w-full h-full object-cover" src={futureHuman} />
           </div>
           
           {/* Right side - Text */}
@@ -142,7 +147,7 @@ function TicketPricesSection() {
           
           {/* Right side - Image */}
           <div className="w-full h-[400px]">
-            <img alt="Museum interior" className="w-full h-full object-cover" src={imgRectangle3} />
+            <img alt="Museum interior" className="w-full h-full object-cover" src={ticketPrices} />
           </div>
         </div>
       </div>
