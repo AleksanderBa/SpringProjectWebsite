@@ -124,6 +124,18 @@ npm run build
 
 The build output will be in the `dist` folder.
 
+## Deploying to GitHub Pages
+
+See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions on how to deploy this website to GitHub Pages.
+
+Quick steps:
+1. Push your code to GitHub
+2. Go to Settings > Pages in your repository
+3. Select "GitHub Actions" as the source
+4. The website will automatically deploy on every push to main branch
+
+Your site will be available at: `https://[your-username].github.io/[repo-name]/`
+
 ## License
 
 This project was created from a Figma design import.
